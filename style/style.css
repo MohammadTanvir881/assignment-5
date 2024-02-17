@@ -8,6 +8,31 @@
 }
 
 .common-btn:hover {
-    background-color: aqua;
+    background-color: rgb(31, 39, 39);
+    color: white;
 }
 
+.seats-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #03071299;
+}
+
+.seats {
+    background-color: #F7F8F8; 
+    padding: 4px 8px;
+    width: 100px;
+    height:60px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #03071299;
+    
+    
+}

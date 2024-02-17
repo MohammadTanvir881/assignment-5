@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment -05</title>
+    <!-- daisy ui and tailwind link-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--css link-->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!--Google Font Link raleway-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--Goggle Font link poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .raleway {
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body> <!--header part starts-->
+    <header class="container mx-auto px-2 lg:px-10">
+        <!-- nav part starts-->
+        <nav class="mt-5">
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                    </div>
+                    <a class="btn btn-ghost text-4xl poppins px-0 font-extrabold">E-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="mx-3"><a>Home</a></li>
+                        <li class="mx-3"><a>About</a></li>
+                        <li class="mx-3"><a>Destination</a></li>
+                        <li class="mx-3"><a>Search</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-[#1DD100] bg-[#1DD1001A]">Bus <img src="images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
+
+        <!--banner section starts-->
+        <section
+            class="my-9 banner-section  lg:min-h-[600px] bg-no-repeat bg-cover bg-center rounded-2xl flex items-center justify-center">
+            <div class=" text-center lg:pt10">
+                <h1 class="text-7xl font-extrabold raleway text-white mb-8">End-to-End Travel with <br>
+                    <span class="text-[#1DD100]">P Paribahan</span>
+                </h1>
+                <p class="max-w-[650px] mx-auto text-[#FFFFFF] mb-8">Reliable bus services provide efficient
+                    transportation, connecting communities, reducing traffic congestion, and offering accessible
+                    mobility for diverse populations.</p>
+
+                <button class="btn bg-[#1DD100] border-none common-btn"> Buy Now</button>
+            </div>
+
+
+        </section>
+
+        <!-- banner bottom part starts-->
+        <section class="flex flex-col lg:flex-row lg:relative bottom-20 justify-between lg:px-32">
+            <!--first card-->
+            <div class="flex gap-5 rounded-xl border-b-4 py-5 px-10 border-green-400 bg-white">
+                <img class="border-4 border-dashed" src="images/people.png" alt="">
+                <div>
+                    <h1 class="text-4xl font-semibold">500K+</h1>
+                    <p class="text-[#03071299]">Registered users</p>
+                </div>
+            </div>
+            <!--second card-->
+            <div class="flex gap-5 rounded-xl border-b-4 py-5 px-10 border-green-400 bg-white">
+                <img class="border-4 border-dashed" src="images/ticket-cupon.png" alt="">
+                <div>
+                    <h1 class="text-4xl font-semibold">1.7 lacks</h1>
+                    <p class="text-[#03071299]">Tickets sold</p>
+                </div>
+            </div>
+            <!--third card-->
+            <div class="flex gap-5 rounded-xl border-b-4 py-5 px-10 border-green-400 bg-white">
+                <img class="border-4 border-dashed" src="images/stoppage.png" alt="">
+                <div>
+                    <h1 class="text-4xl font-semibold">80K+</h1>
+                    <p class="text-[#03071299]">Rental partners</p>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- main section starts-->
+    <main class="container mx-auto">
+        <!-- best offer section starts-->
+        <section class="text-center lg:px-12">
+            <h1 class="raleway text-4xl font-bold mb-9">Best offers for you</h1>
+
+            <!--ticket coupon section starts-->
+            <div class="flex flex-col lg:flex-row justify-between">
+                <!--coupon 1-->
+                <div class="flex text-start items-center gap-12 bg-[#FFBF0F] px-20  rounded-xl">
+                    <!--first sight-->
+                    <div class="">
+                           <h1 class="poppins text-4xl font-bold">15% OFF</h1>
+                           <p class="text-xl font-semibold poppins">on Your Next Purchase</p>
+                           <p class="text-lg font-medium poppins text-[#0307127F]">use by january 2024</p>
+                    </div>
+                    <img src="images/cupon-devider.png" alt="">
+                    <!--second sight-->
+                    <div>
+                            <h1 class="raleway text-3xl font-bold">NEW15</h1>
+                            <p class="text-lg font-medium poppins text-[#0307127F]">coupon code</p>
+                    </div>
+
+                </div>
+                <!--coupon 2-->
+                <div>
+                    <div class="flex text-start items-center gap-12 bg-[#F78C9C] px-20  rounded-xl">
+                        <!--first sight-->
+                        <div>
+                               <h1 class="poppins text-4xl font-bold">20% OFF</h1>
+                               <p class="text-xl font-semibold poppins">on Your Next Purchase</p>
+                               <p class="text-lg font-medium poppins text-[#0307127F]">use by january 2024</p>
+                        </div>
+                        <img src="images/cupon-devider.png" alt="">
+                        <!--second sight-->
+                        <div>
+                                <h1 class="raleway text-3xl font-bold">Couple</h1>
+                                <p class="text-lg font-medium poppins text-[#0307127F]">coupon code</p>
+                        </div>
+    
+                    </div>
+    
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

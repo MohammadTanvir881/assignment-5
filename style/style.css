@@ -1,0 +1,12 @@
+.banner-section {
+    background-image: url('../images/banner.png');
+
+}
+
+.common-btn {
+    background-color: #1DD100;
+}
+
+.common-btn:hover {
+    background-color: aqua;
+}

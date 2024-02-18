@@ -170,7 +170,7 @@
         <section class="container mx-auto bg-[#F7F8F8]  border-t-4 border-green-400 rounded-t-3xl py-5">
 
             <!--ticket text section-->
-            <section class="text-center mt-24 mb-12 space-y-5">
+            <section class="text-center mt-24 mb-12 space-y-5" id="ticket-counter">
                 <h1 class="text-4xl font-bold">P.H Paribahan</h1>
                 <p class="text-xl max-w-[700px] mx-auto text-[#03071299] text-center font-semibold"> Transport
                     facilitates movement of people and goods, vital for economic activities, connecting
@@ -194,7 +194,7 @@
                         </div>
 
                         <a class="btn text-[#1DD100] bg-[#1DD1001A]"> <img src="images/seat-green.png"
-                                alt=""><span>40</span> Seats left </a>
+                                alt=""><span id="remaining-seats">40</span> Seats left </a>
                     </div>
 
 
@@ -238,13 +238,13 @@
 
             <!--selected seats section starts here-->
 
-            <section class="my-16 lg:mx-32  bg-white px-10 rounded-xl flex flex-col lg:flex-row gap-10" id="ticket-counter">
+            <section class="my-16 lg:mx-32  bg-white px-10 rounded-xl flex flex-col lg:flex-row gap-10" >
                 <!--select seat section-->
                 <div>
                     <!-- heading part-->
                     <div class="">
                         <h1 class="raleway text-2xl font-bold border-b-4 py-2 border-dashed" >Select Your Seat</h1>
-                        <div class="py-2 flex justify-between border-b-4 py-2 border-dashed">
+                        <div class="py-2 flex justify-between border-b-4  border-dashed">
                             <p class="text-[#03071299] poppins text-xl flex gap-2"> <img src="images/seat-gray.png"
                                     alt=""> Available</p>
                             <p class="text-[#03071299] poppins text-xl flex gap-2"> <img
@@ -260,55 +260,55 @@
                     <!--seat selection part passenger-->
                     <div class="grid grid-cols-5 gap-5 my-10 border-r-4 border-dashed pr-8">
                         <div class="seats-name" id="">A</div>
-                        <div class="seats" id="">A1</div>
-                        <div class="seats" id="">A2</div>
-                        <div class="seats" id="">A3</div>
-                        <div class="seats" id="">A4</div>
+                        <div itemid="A1" class="seats" id="">A1</div>
+                        <div itemid="A2" class="seats" id="">A2</div>
+                        <div itemid="A3" class="seats" id="">A3</div>
+                        <div itemid="A4" class="seats" id="">A4</div>
                         <div class="seats-name" id="">B</div>
-                        <div class="seats" id="">B1</div>
-                        <div class="seats" id="">B2</div>
-                        <div class="seats" id="">B3</div>
-                        <div class="seats" id="">B4</div>
+                        <div id="B1" class="seats" id="">B1</div>
+                        <div id="B2" class="seats" id="">B2</div>
+                        <div id="B3" class="seats" id="">B3</div>
+                        <div id="B4" class="seats" id="">B4</div>
                         <div class="seats-name" id="">C</div>
-                        <div class="seats" id="">C1</div>
-                        <div class="seats" id="">C2</div>
-                        <div class="seats" id="">C3</div>
-                        <div class="seats" id="">C4</div>
+                        <div id="C1" class="seats" id="">C1</div>
+                        <div id="C2" class="seats" id="">C2</div>
+                        <div id="C3" class="seats" id="">C3</div>
+                        <div id="C4" class="seats" id="">C4</div>
                         <div class="seats-name" id="">D</div>
-                        <div class="seats" id="">D1</div>
-                        <div class="seats" id="">D2</div>
-                        <div class="seats" id="">D3</div>
-                        <div class="seats" id="">D4</div>
+                        <div id="D1" class="seats" id="">D1</div>
+                        <div id="D2" class="seats" id="">D2</div>
+                        <div id="D3" class="seats" id="">D3</div>
+                        <div id="D4" class="seats" id="">D4</div>
                         <div class="seats-name" id="">E</div>
-                        <div class="seats" id="">E1</div>
-                        <div class="seats" id="">E2</div>
-                        <div class="seats" id="">E3</div>
-                        <div class="seats" id="">E4</div>
+                        <div id="E1" class="seats" id="">E1</div>
+                        <div id="E2" class="seats" id="">E2</div>
+                        <div id="E3" class="seats" id="">E3</div>
+                        <div id="E4" class="seats" id="">E4</div>
                         <div class="seats-name" id="">F</div>
-                        <div class="seats" id="">F1</div>
-                        <div class="seats" id="">F2</div>
-                        <div class="seats" id="">F3</div>
-                        <div class="seats" id="">F4</div>
+                        <div id="F1" class="seats" id="">F1</div>
+                        <div id="F2" class="seats" id="">F2</div>
+                        <div id="F3" class="seats" id="">F3</div>
+                        <div id="F4" class="seats" id="">F4</div>
                         <div class="seats-name" id="">G</div>
-                        <div class="seats" id="">G1</div>
-                        <div class="seats" id="">G2</div>
-                        <div class="seats" id="">G3</div>
-                        <div class="seats" id="">G4</div>
+                        <div id="G1" class="seats" id="">G1</div>
+                        <div id="G2" class="seats" id="">G2</div>
+                        <div id="G3" class="seats" id="">G3</div>
+                        <div id="G4" class="seats" id="">G4</div>
                         <div class="seats-name" id="">H</div>
-                        <div class="seats" id="">H1</div>
-                        <div class="seats" id="">H2</div>
-                        <div class="seats" id="">H3</div>
-                        <div class="seats" id="">H4</div>
+                        <div id="H1" class="seats" id="">H1</div>
+                        <div id="H2" class="seats" id="">H2</div>
+                        <div id="H3" class="seats" id="">H3</div>
+                        <div id="H4" class="seats" id="">H4</div>
                         <div class="seats-name" id="">I</div>
-                        <div class="seats" id="">I1</div>
-                        <div class="seats" id="">I2</div>
-                        <div class="seats" id="">I3</div>
-                        <div class="seats" id="">I4</div>
+                        <div id="I1" class="seats" id="">I1</div>
+                        <div id="I2" class="seats" id="">I2</div>
+                        <div id="I3" class="seats" id="">I3</div>
+                        <div id="I4" class="seats" id="">I4</div>
                         <div class="seats-name" id="">J</div>
-                        <div class="seats" id="">J1</div>
-                        <div class="seats" id="">J2</div>
-                        <div class="seats" id="">J3</div>
-                        <div class="seats" id="">J4</div>
+                        <div id="J1" class="seats" id="">J1</div>
+                        <div id="J2" class="seats" id="">J2</div>
+                        <div id="J3" class="seats" id="">J3</div>
+                        <div id="J4" class="seats" id="">J4</div>
                     </div>
                 </div>
 
@@ -326,29 +326,26 @@
                             <!--seat-->
                             <div>
                                 <h1 class="text-xl font-semibold poppins border-b-4 py-2  border-dashed">Seat <span
-                                        class="text-green-500">2</span></h1>
+                                        class="text-green-500" id="total-seat-select">0</span></h1>
 
-                                <div class="text-[#03071299] poppins text-xl font-semibold space-y-2 my-2">
-                                    <p>C2</p>
-                                    <p>C2</p>
+                                <div class="text-[#03071299] poppins text-xl font-semibold space-y-2 my-2" id="selected-seat">
+                                   
 
                                 </div>
                             </div>
                             <!--class-->
                             <div>
                                 <h1 class="text-xl font-semibold poppins border-b-4 py-2  border-dashed ">Class</h1>
-                                <div class="text-[#03071299] poppins text-xl font-semibold space-y-2 my-2">
-                                    <p>Economy</p>
-                                    <p>Economy</p>
+                                <div class="text-[#03071299] poppins text-xl font-semibold space-y-2 my-2" id="selected-class">
+                                 
 
                                 </div>
                             </div>
                             <!--price-->
                             <div>
                                 <h1 class="text-xl font-semibold poppins border-b-4 py-2  border-dashed">Price</h1>
-                                <div class="text-[#03071299] poppins text-xl font-semibold space-y-2 my-2">
-                                    <p>550</p>
-                                    <p>550</p>
+                                <div class="text-[#03071299] poppins text-xl font-semibold space-y-2 my-2" id="ticked-price">
+                                  
 
                                 </div>
                             </div>
@@ -362,7 +359,7 @@
                             <!--title-->
                             <div class="text-2xl font-semibold poppins flex justify-between my-3">
                                 <p>Total Price :</p>
-                                <p>BDT <span>1100</span></p>
+                                <p>BDT <span id="display-price">1100</span></p>
                             </div>
                             <!--input field-->
                             <div class="relative">
@@ -374,7 +371,7 @@
                             <!--grand total-->
                             <div class="text-2xl font-semibold poppins flex justify-between my-3">
                                 <p>Grand Total :</p>
-                                <p>BDT <span>1100</span></p>
+                                <p>BDT <span id="grand-total">1100</span></p>
                             </div>
 
                         </div>
@@ -431,6 +428,9 @@
             </nav>
         </div>
      </footer>
+
+
+     <script src="script.js"></script>
 </body>
 
 </html>

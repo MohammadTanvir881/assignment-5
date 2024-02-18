@@ -94,6 +94,46 @@ for (const seat of seats) {
     })
 }
 
+// next button
+
+const nextBtn = document.getElementById('next-btn');
+nextBtn.addEventListener('click', function(){
+
+    const headerContainer = document.getElementById('header-container');
+    headerContainer.classList.add('hidden');
+
+    const mainContainer = document.getElementById('main-container');
+    mainContainer.classList.add('hidden');
+
+    const footer = document.getElementById('footer');
+    footer.classList.add('hidden')
+
+    const mainContainer2 = document.getElementById('main-container2');
+    mainContainer2.classList.remove('hidden')
+    
+})
+
+
+// continue button 
+
+const continueBtn = document.getElementById('continue-btn');
+continueBtn.addEventListener('click', function(){
+
+    const headerContainer = document.getElementById('header-container');
+    headerContainer.classList.remove('hidden');
+
+    const mainContainer = document.getElementById('main-container');
+    mainContainer.classList.remove('hidden');
+
+    const footer = document.getElementById('footer');
+    footer.classList.remove('hidden')
+
+    const mainContainer2 = document.getElementById('main-container2');
+    mainContainer2.classList.add('hidden')
+
+    window.location.reload();
+})
+
 
 
 

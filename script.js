@@ -18,8 +18,43 @@ for (const seat of seats) {
         const DisplayPrice = document.getElementById('display-price');
         DisplayPrice.innerText = selectedSeatPrice;
        
-       
 
+        // Grand Total part
+        const grandTotal = document.getElementById('grand-total');
+        grandTotal.innerText=selectedSeatPrice;
+        
+        // coupon input field
+         
+      const applyBtn = document.getElementById('apply-btn');
+      applyBtn.addEventListener('click', function(){
+        const inputField = document.getElementById('input-field');
+        const inputText = inputField.value.split(' ').join('').toUpperCase();
+        if (inputText ==='NEW15'){
+            const discount = selectedSeatPrice * 0.15;
+            const discountPrice = selectedSeatPrice - discount;
+            grandTotal.innerText = discountPrice;
+            const couponDiv = document.getElementById('coupon-div');
+            couponDiv.style.display = 'none';
+            
+           
+        }
+
+        else if (inputText ==='COUPLE20'){
+            const discount = selectedSeatPrice * 0.2;
+            const discountPrice = selectedSeatPrice - discount;
+            grandTotal.innerText = discountPrice;
+            const couponDiv = document.getElementById('coupon-div');
+            couponDiv.style.display = 'none';
+            
+        }
+        else {
+            return alert('Invalid Coupon Code');
+            
+        }
+        
+        
+      })
+        
 
         // seat name are displayed
         const selectContainer = document.getElementById('selected-seat');

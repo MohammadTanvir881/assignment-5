@@ -17,44 +17,65 @@ for (const seat of seats) {
         const selectedSeatPrice = seatPrice * seatCount;
         const DisplayPrice = document.getElementById('display-price');
         DisplayPrice.innerText = selectedSeatPrice;
-       
+
 
         // Grand Total part
         const grandTotal = document.getElementById('grand-total');
-        grandTotal.innerText=selectedSeatPrice;
-        
-        // coupon input field
-         
-      const applyBtn = document.getElementById('apply-btn');
-      applyBtn.addEventListener('click', function(){
-        const inputField = document.getElementById('input-field');
-        const inputText = inputField.value.split(' ').join('').toUpperCase();
-        if (inputText ==='NEW15'){
-            const discount = selectedSeatPrice * 0.15;
-            const discountPrice = selectedSeatPrice - discount;
-            grandTotal.innerText = discountPrice;
-            const couponDiv = document.getElementById('coupon-div');
-            couponDiv.style.display = 'none';
-            
-           
-        }
+        grandTotal.innerText = selectedSeatPrice;
 
-        else if (inputText ==='COUPLE20'){
-            const discount = selectedSeatPrice * 0.2;
-            const discountPrice = selectedSeatPrice - discount;
-            grandTotal.innerText = discountPrice;
-            const couponDiv = document.getElementById('coupon-div');
-            couponDiv.style.display = 'none';
-            
+        // coupon input field
+
+        const applyBtn = document.getElementById('apply-btn');
+        applyBtn.addEventListener('click', function () {
+            const inputField = document.getElementById('input-field');
+            const inputText = inputField.value.split(' ').join('').toUpperCase();
+            if (inputText === 'NEW15') {
+                const discount = selectedSeatPrice * 0.15;
+                const discountPrice = selectedSeatPrice - discount;
+                grandTotal.innerText = discountPrice;
+                const couponDiv = document.getElementById('coupon-div');
+                couponDiv.style.display = 'none';
+
+
+            }
+
+            else if (inputText === 'COUPLE20') {
+                const discount = selectedSeatPrice * 0.2;
+                const discountPrice = selectedSeatPrice - discount;
+                grandTotal.innerText = discountPrice;
+                const couponDiv = document.getElementById('coupon-div');
+                couponDiv.style.display = 'none';
+
+            }
+            else {
+                return alert('Invalid Coupon Code');
+
+            }
+
+
+        })
+
+        if (seatCount > 0) {
+            const nextBtn = document.getElementById('next-btn');
+            nextBtn.addEventListener('click', function () {
+    
+                const headerContainer = document.getElementById('header-container');
+                headerContainer.classList.add('hidden');
+    
+                const mainContainer = document.getElementById('main-container');
+                mainContainer.classList.add('hidden');
+    
+                const footer = document.getElementById('footer');
+                footer.classList.add('hidden')
+    
+                const mainContainer2 = document.getElementById('main-container2');
+                mainContainer2.classList.remove('hidden')
+    
+            })
         }
-        else {
-            return alert('Invalid Coupon Code');
-            
-        }
-        
-        
-      })
-        
+       
+       
+
 
         // seat name are displayed
         const selectContainer = document.getElementById('selected-seat');
@@ -92,32 +113,19 @@ for (const seat of seats) {
         totalSeatSelected.innerText = seatCount;
 
     })
+
+  
 }
 
 // next button
 
-const nextBtn = document.getElementById('next-btn');
-nextBtn.addEventListener('click', function(){
 
-    const headerContainer = document.getElementById('header-container');
-    headerContainer.classList.add('hidden');
-
-    const mainContainer = document.getElementById('main-container');
-    mainContainer.classList.add('hidden');
-
-    const footer = document.getElementById('footer');
-    footer.classList.add('hidden')
-
-    const mainContainer2 = document.getElementById('main-container2');
-    mainContainer2.classList.remove('hidden')
-    
-})
 
 
 // continue button 
 
 const continueBtn = document.getElementById('continue-btn');
-continueBtn.addEventListener('click', function(){
+continueBtn.addEventListener('click', function () {
 
     const headerContainer = document.getElementById('header-container');
     headerContainer.classList.remove('hidden');

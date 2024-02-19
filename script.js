@@ -33,6 +33,10 @@ for (const seat of seats) {
                 const discount = selectedSeatPrice * 0.15;
                 const discountPrice = selectedSeatPrice - discount;
                 grandTotal.innerText = discountPrice;
+
+                // discount price
+                document.getElementById('discount-price').innerText = discount;
+                document.getElementById('discount-coupon').classList.remove('hidden');
                 const couponDiv = document.getElementById('coupon-div');
                 couponDiv.style.display = 'none';
 
@@ -43,6 +47,9 @@ for (const seat of seats) {
                 const discount = selectedSeatPrice * 0.2;
                 const discountPrice = selectedSeatPrice - discount;
                 grandTotal.innerText = discountPrice;
+
+                document.getElementById('discount-price').innerText = discount;
+                document.getElementById('discount-coupon').classList.remove('hidden');
                 const couponDiv = document.getElementById('coupon-div');
                 couponDiv.style.display = 'none';
 
@@ -54,6 +61,17 @@ for (const seat of seats) {
 
 
         })
+
+        const phoneNumber = document.getElementById('phone-number');
+        
+        phoneNumber.addEventListener('keyup', function(event){
+            const text = event.target.value;
+            if(text.length > 8){
+                const nextBtn = document.getElementById('next-btn')
+                nextBtn.removeAttribute('disabled')
+            }
+        })
+      
 
         if (seatCount > 0) {
             const nextBtn = document.getElementById('next-btn');

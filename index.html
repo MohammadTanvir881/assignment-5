@@ -254,7 +254,7 @@
 
                     <!-- seat selection part driver-->
                     <div class="flex justify-end mt-9 relative h-10">
-                            <button class="btn absolute bottom-1 right-10 top-1 px-5  text-left bg-stone-300  text-xl">Driver</button>
+                            <button class="btn absolute bottom-1 right-10 top-1 px-5  text-left bg-stone-300  text-xl"><img class="w-10 h-10" src="images/steering-wheel-14.png" alt=""></button>
                           </div>
 
                     <!--seat selection part passenger-->
@@ -361,6 +361,10 @@
                                 <p>Total Price :</p>
                                 <p>BDT <span id="display-price">1100</span></p>
                             </div>
+                            <div class="text-xl font-semibold hidden flex justify-between my-3" id="discount-coupon">
+                                <p>Discount Price :</p>
+                                <p>BDT <span id="discount-price">0</span></p>
+                            </div>
                             <!--input field-->
                             <div class="relative" id="coupon-div">
                                 <input type="text" placeholder="Have any coupon?" id="input-field" class="input py-7 w-full text-xl " />
@@ -386,15 +390,15 @@
                         <input type="text" placeholder="Enter your name"
                             class="input py-7 mb-4 text-xl font-medium input-bordered w-full"required/>
 
-                        <p class="text-2xl font-semibold poppins mb-2">Phone Number</p>
-                        <input type="number" placeholder="Enter your phone number"
+                        <p class="text-2xl font-semibold poppins mb-2" >Phone Number</p>
+                        <input id="phone-number" type="number" placeholder="Enter your 11 Digit number"
                             class="input py-7 mb-4 text-xl font-medium input-bordered w-full" required />
 
                         <p class="text-2xl font-semibold poppins mb-2">Email ID</p>
                         <input type="email" placeholder="Enter your email id"
                             class="input py-7 mb-4 text-xl font-medium input-bordered w-full" />
 
-                            <button class="btn  right-2 top-1 text-xl bg-[#1DD100] px-7 border-none text-white common-btn w-full py-3" id="next-btn">Next</button>
+                            <button class="btn right-2 top-1 text-xl bg-[#1DD100] px-7 border-none text-white common-btn w-full py-3" id="next-btn" disabled >Next</button>
                             
                             <!--terms and policy-->
 

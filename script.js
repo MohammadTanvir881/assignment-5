@@ -1,7 +1,11 @@
 let seatCount = 0;
 let selectedSeatPrice = 0;
 
+// bus icon modification
 
+document.getElementById('bus-icon').addEventListener('click', function(){
+    alert('You Need To By Ticket First');
+})
 
 const seats = document.getElementsByClassName('seats');
 for (const seat of seats) {

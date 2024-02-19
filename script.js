@@ -75,7 +75,7 @@ for (const seat of seats) {
 
         if (seatCount > 0) {
             const nextBtn = document.getElementById('next-btn');
-            nextBtn.addEventListener('click', function () {
+            nextBtn.addEventListener('click', function (){
     
                 const headerContainer = document.getElementById('header-container');
                 headerContainer.classList.add('hidden');
